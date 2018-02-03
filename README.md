@@ -1,6 +1,6 @@
 # Config files for Ruby on Rails development using Docker
 
-Using latest versions as of 2018-02-02: Ruby 1.5.0, Rails 5.1.4, and latest
+> Uses latest versions as of 2018-02-02: Ruby 1.5.0, Rails 5.1.4, and latest
 Postgres. (But these are easy to change.) Tested on MacOS, because that's what
 I happen to use. This is my personal configuration that I use for client work
 and my own projects.
@@ -26,4 +26,18 @@ Tests can be run in the container like so:
 
 ```bash
 docker-compose exec web bin/rspec
+```
+
+Or use Spring inside Docker the cheap and easy way:
+
+```bash
+docker-compose exec web bash
+bin/rspec
+```
+
+...then leave that session open and re-run the tests with
+a fast Spring boot up:
+
+```bash
+bin/rspec
 ```
