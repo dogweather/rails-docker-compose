@@ -1,7 +1,5 @@
 # Ruby on Rails Development Environment
-
 FROM ruby:2.5.0
-LABEL maintainer="robb@public.law"
 
 # Set up Linux
 RUN apt-get update
