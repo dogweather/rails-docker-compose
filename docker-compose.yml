@@ -1,0 +1,17 @@
+version: '3.2'
+services:
+  db:
+    image: postgres
+
+  web:
+    build: .
+    volumes:
+      - type: bind
+        source: .
+        target: /app
+    ports:
+      - "3000:3000"
+    depends_on:
+      - db
+    command:
+      - ./run.sh
