@@ -1,11 +1,5 @@
 # Config files for Ruby on Rails development using Docker
 
-> Uses latest versions as of 2018-02-02: Ruby 1.5.0, Rails 5.1.4, and latest
-Postgres. (But these are easy to change.) Tested on MacOS, because that's what
-I happen to use. This is my personal configuration that I use for client work
-and my own projects.
-
-
 ## What you get
 
 * Development-oriented config: Source code is mounted so that changes in the container appear on the host, and vice-versa.
@@ -13,12 +7,18 @@ and my own projects.
 * Syncing with Postgres startup delay.
 * All the crappy little dependencies installed.
 * No weird hacks.
+* Tested with current Ruby and Rails as of 2018-02-02: Ruby **2.5.0**, Rails **5.1.4**
+
+
+Tested on MacOS, because that's what
+I happen to use. This is my personal configuration that I use for client work
+and my own projects. It's the result of several late-night hours getting everything working!
 
 
 ## How to Dockerize your Rails app
 
-0. Install Docker somehow. I use Docker for Mac.
-1. Copy the three config files to an existing Rails project which you want to Dockerize.
+0. Install Docker somehow. I use [Docker for Mac](https://www.docker.com/docker-mac).
+1. Copy the three config files to an existing Rails project.
 2. Edit your development database settings to connect to Postgres at host `db`, username `postgres`, password empty string.
 3. Spin it up with `docker-compose up`.
 
