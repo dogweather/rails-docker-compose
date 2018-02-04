@@ -18,7 +18,7 @@ and my own projects. It's the result of several late-night hours getting everyth
 ## How to Dockerize your Rails app
 
 0. Install Docker somehow. I use [Docker for Mac](https://www.docker.com/docker-mac).
-1. Copy the three config files to an existing Rails project.
+1. Copy the three config files to an existing Rails project. Make `run.sh` executable, e.g., `chmod +x run.sh`.
 2. Edit your development database settings to connect to Postgres at host `db`, username `postgres`, password empty string.
 3. Spin it up with `docker-compose up`.
 
