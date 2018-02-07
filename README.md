@@ -2,6 +2,7 @@
 
 ## What you get
 
+* One-line dev environment setup and launch: `docker-compose up`. 
 * Development-oriented config: Source code is mounted so that changes in the container appear on the host, and vice-versa.
 * Fast re-builds because the `DOCKERFILE` is written to help Docker cache the images.
 * Syncing with Postgres startup delay.
