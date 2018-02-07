@@ -3,7 +3,7 @@
 ## What you get
 
 * One-line dev environment setup and launch: `docker-compose up`.
-* Just one easy-to-install dependency to get coding on a new computer: Docker. (Versus two complex ones when using Vagrant.)
+* One easy-to-install dependency to get coding on a new computer: Docker. (Versus two complex ones when using Vagrant.)
 * Development-oriented config: Source code is mounted so that changes in the container appear on the host, and vice-versa.
 * Fast re-builds because the `DOCKERFILE` is written to help Docker cache the images.
 * Syncing with Postgres startup delay.
@@ -12,7 +12,7 @@
 * Tested with current Ruby and Rails as of 2018-02-02: Ruby **2.5.0**, Rails **5.1.4**
 
 
-Tested on MacOS, because that's what
+Tested on MacOS and Fedora Linux, because that's what
 I happen to use. This is my personal configuration that I use for client work
 and my own projects. It's the result of several late-night hours getting everything working!
 
