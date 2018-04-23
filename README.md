@@ -27,7 +27,13 @@ and my own projects. It's the result of several late-night hours getting everyth
 Tests can be run in the container like so:
 
 ```bash
-docker-compose exec web bin/rspec
+docker-compose exec web rspec
+```
+
+I create an alias `run` so that I just do:
+
+```bash
+run rspec
 ```
 
 Or use Spring inside Docker the cheap and easy way:
