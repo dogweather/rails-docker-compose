@@ -3,6 +3,8 @@ set -e
 
 # Ensure the app's dependencies are installed
 echo "bundle install --without=production..."
+gem update --system
+gem update bundler
 bundle install --without=production
 
 # Wait for Postgres to become available.
