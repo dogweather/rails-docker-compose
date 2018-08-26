@@ -1,5 +1,8 @@
 # Config files for Ruby on Rails development using Docker
 
+1. `docker-compose up`
+2. Profit!
+
 ## What you get
 
 * One-line dev environment setup and launch: `docker-compose up`.
