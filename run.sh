@@ -17,7 +17,7 @@ echo "Postgres is available: continuing with database setup..."
 
 # Potentially Set up the database
 echo "bundle exec rake db:setup..."
-bin/rails db:setup
+bundle exec rake db:setup
 
 # Start the web server
 echo "bin/rails s -p 3000 -b '0.0.0.0'..."
