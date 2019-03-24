@@ -15,3 +15,5 @@ services:
       - db
     command:
       - ./run.sh
+    environment:
+      PAGER: 'less -R'
