@@ -1,5 +1,5 @@
 # Ruby on Rails Development Environment
-FROM ruby:2.6.2
+FROM ruby:2.6.3
 
 # Set up Linux
 RUN apt-get update
